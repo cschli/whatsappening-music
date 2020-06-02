@@ -1,0 +1,93 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-size: 100%;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.jumbotron{
+    background-color: transparent;
+    font-family: 'Cabin Sketch', cursive;
+    color: white;
+    /* border: 2px solid rgb(15, 7, 1); */
+}
+
+.navbar {
+    position: relative;
+    margin-left: 35%;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    position: relative;
+    margin-left: 40%;
+    margin-bottom: 25px;
+}
+
+.artist-history {
+    position: relative;
+    margin: auto;
+    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+    background-color: rgb(53, 54, 54);
+    width: 30%;
+    border-radius: 10px;
+}
+
+.artist-search-button{
+    background-color: rgb(53, 54, 54);
+    border: none;
+}
+
+h1{
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 15px 15px black;
+}
+
+.artist-profile{
+    float: left;
+    margin-left: 10%;
+
+
+}
+
+.container3{
+    float: right;
+    margin-right: 10%;
+}
+
+img {
+    width: 100%;
+}
+
+th {
+    font-size: 24px;
+}
+
+.artist-history{
+    display: none;
+}
+
+.card {
+    color: white;
+    border: none;
+    margin: auto;
+    width: 56rem;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+}
+a:hover{
+    color: #f16b00;
+}
+
+.iframe-play{
+    float: right;
+}
+
+.artist-profile {
+    float: left;
+}

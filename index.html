@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/music_code.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+</head>
+
+<body>
+
+    <!-- Is this section just for the background? -->
+
+    <!-- Contains...everything -->
+    <div class="container">
+        <!-- Jumbotron containing the title -->
+        <div class="jumbotron">
+            <center>
+                <h1>What's Appening Music</h1>
+            </center>
+
+        </div>
+
+        <!-- This contains the search form -->
+        <nav class="navbar navbar-light bg-transparent">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2 artist-search-input" type="search" placeholder="Example: Beyonce" aria-label="Search">
+                <button class="btn btn-success my-2 my-sm-0 artist-search-button" type="submit">Search</button>
+            </form>
+        </nav>
+
+        <!-- This is the artist history section, we need to major style this -->
+        <div class="artist-history">
+
+        </div>
+        <div class="buttons">
+            <!-- This two buttons are for displaying the History section, and clearing the history (also clear in firebase) -->
+            <button class="btn btn-dark my-2 my-sm-0 history-button" type="submit">History</button>
+            <button class="btn btn-dark my-2 my-sm-0 clear-history-button" type="submit">Clear History</button>
+        </div>
+
+        <!-- This contains the pictures of artist and album art -->
+        <div class="artist-profile">
+            <div class="slider">
+            </div>
+
+        </div>
+
+        <!-- This container contains the iframe used for the album preview player -->
+        <div class="container3">
+
+            <iframe id="iframe-play" src="" width="420" height="420" frameborder="0" allowtransparency="true"></iframe>
+
+        </div>
+
+        <!-- This section contains the news stories -->
+        <div class="card bg-transparent">
+            <div class="card-body">
+                <div id="displayArticle">
+                    <div class="card-body">
+                        <table class="table" id="article-table">
+                            <thead>
+                                <tr>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
